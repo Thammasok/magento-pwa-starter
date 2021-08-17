@@ -1,0 +1,1 @@
+export const MAGENTO_BACKEND_URL = process.env.MAGENTO_BACKEND_URL

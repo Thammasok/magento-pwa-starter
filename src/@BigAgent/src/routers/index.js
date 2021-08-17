@@ -5,8 +5,8 @@ module.exports = () => [
     path: require.resolve('../views/Greeting/index.js')
   },
   {
-    name: 'AbcRoutes',
-    pattern: '/zxz',
-    path: require.resolve('../views/Greeting/index.js')
+    name: 'TodoRoute',
+    pattern: '/todo',
+    path: require.resolve('../views/Todo/index.js')
   }
 ]

@@ -28,7 +28,10 @@
     "@magento/venia-drivers": "src/drivers"
   },
   "dependencies": {
-    "@magento/pwa-buildpack": "~10.0.0"
+    "@magento/pwa-buildpack": "~10.0.0",
+    "axios": "^0.21.1",
+    "js-cookie": "^3.0.0",
+    "localStorage": "^1.0.4"
   },
   "devDependencies": {
     "@adobe/apollo-link-mutation-queue": "~1.0.2",
@@ -102,6 +105,7 @@
     "redux-thunk": "~2.3.0",
     "rimraf": "~2.6.3",
     "style-loader": "~2.0.0",
+    "styled-components": "^5.3.0",
     "terser-webpack-plugin": "~1.2.3",
     "uuid": "~3.3.2",
     "webpack": "~4.46.0",
@@ -120,7 +124,8 @@
     "sharp": "~0.23.3"
   },
   "resolutions": {
-    "workbox-build": "~6.0.2"
+    "workbox-build": "~6.0.2",
+    "styled-components": "^5"
   },
   "engines": {
     "node": ">=10.x",

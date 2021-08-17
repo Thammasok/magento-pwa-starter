@@ -2,13 +2,16 @@ import React from 'react'
 import { bool, shape, string } from 'prop-types'
 import { useScrollLock } from '@magento/peregrine'
 
+// CSS Modules
+import defaultClasses from './main.css'
+
+// Magento Components
 import { mergeClasses } from '@magento/venia-ui/lib/classify'
 // import Footer from '@magento/venia-ui/lib/components/Footer'
 // import Header from '@magento/venia-ui/lib/components/Header'
-import defaultClasses from './main.css'
 // import TopBar from '../TopBar/topbar'
 
-const Main = props => {
+const MainLayout = props => {
   const { children, isMasked } = props
   const classes = mergeClasses(defaultClasses, props.classes)
 
@@ -24,9 +27,8 @@ const Main = props => {
   )
 }
 
-export default Main
-
-Main.propTypes = {
+// Prop Types
+MainLayout.propTypes = {
   classes: shape({
     page: string,
     page_masked: string,
@@ -35,3 +37,5 @@ Main.propTypes = {
   }),
   isMasked: bool
 }
+
+export default MainLayout
