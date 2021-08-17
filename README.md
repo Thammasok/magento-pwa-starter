@@ -1,2 +1,1 @@
-# magento-pwa-starter
-Magento-pwa studito
+Documentation for Magento PWA Studio packages is located at [https://pwastudio.io](https://pwastudio.io).
