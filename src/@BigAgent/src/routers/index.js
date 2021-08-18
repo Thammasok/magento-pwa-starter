@@ -8,5 +8,10 @@ module.exports = () => [
     name: 'TodoRoute',
     pattern: '/todo',
     path: require.resolve('../views/Todo/index.jsx')
+  },
+  {
+    name: 'ExchangeRoute',
+    pattern: '/exchange',
+    path: require.resolve('../views/Exchange/index.jsx')
   }
 ]
