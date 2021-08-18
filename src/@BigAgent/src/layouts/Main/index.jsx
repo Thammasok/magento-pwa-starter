@@ -7,9 +7,8 @@ import defaultClasses from './main.css'
 
 // Magento Components
 import { mergeClasses } from '@magento/venia-ui/lib/classify'
-// import Footer from '@magento/venia-ui/lib/components/Footer'
-// import Header from '@magento/venia-ui/lib/components/Header'
-// import TopBar from '../TopBar/topbar'
+import Footer from '@magento/venia-ui/lib/components/Footer'
+import Header from '@magento/venia-ui/lib/components/Header'
 
 const MainLayout = props => {
   const { children, isMasked } = props
@@ -22,7 +21,9 @@ const MainLayout = props => {
 
   return (
     <main className={rootClass}>
+      <Header />
       <div className={pageClass}>{children}</div>
+      <Footer />
     </main>
   )
 }
