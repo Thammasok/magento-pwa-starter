@@ -78,7 +78,10 @@ module.exports = async env => {
       DEFAULT_LOCALE: JSON.stringify(global.LOCALE),
       DEFAULT_COUNTRY_CODE: JSON.stringify(
         process.env.DEFAULT_COUNTRY_CODE || 'US'
-      )
+      ),
+      MAGENTO_SERVICE_QRAPHQL_URL: process.env.MAGENTO_SERVICE_QRAPHQL_URL
+        ? JSON.stringify(process.env.MAGENTO_SERVICE_QRAPHQL_URL)
+        : ''
     }),
     new HTMLWebpackPlugin({
       filename: 'index.html',

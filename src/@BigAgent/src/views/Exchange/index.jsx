@@ -1,10 +1,10 @@
 import React from 'react'
 import { useQuery } from '@apollo/client'
 
-import { EXCHANGE_RATES } from '../../apollo/Queries/Exchange'
+import exchangeGql from './exchange.gql'
 
 const ExchangeRates = () => {
-  const { loading, error, data } = useQuery(EXCHANGE_RATES)
+  const { loading, error, data } = useQuery(exchangeGql.getExchangeRateQuery)
 
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error :(</p>

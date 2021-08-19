@@ -2,20 +2,20 @@ import {
   POST_CLEAR_DATA,
   POST_GET_FAIL,
   POST_GET_SUCCESS
-} from '../../redux/Constants/Post'
+} from '../../Constants/Post'
 
 // Redux Constants
 import {
   TODO_TASK_ADD,
   TODO_TASK_COMPLETED,
   TODO_TASK_LISTS
-} from '../../redux/Constants/Todo'
+} from '../../Constants/Todo'
 
 // Service
-import postService from '../../services/Post'
+import postService from '../../../services/Post'
 
 // Utils
-import handleResponse from '../../utils/Response'
+import handleResponse from '../../../utils/Response'
 
 const todoAction = {
   GetTaskLists: () => async (dispatch, getState) => {

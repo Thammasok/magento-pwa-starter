@@ -1575,7 +1575,7 @@
     write-file-webpack-plugin "~4.5.0"
     yargs "~13.2.2"
 
-"@magento/upward-js@~5.1.0":
+"@magento/upward-js@^5.1.0", "@magento/upward-js@~5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@magento/upward-js/-/upward-js-5.1.0.tgz#a2aac62887fa18a83abf5af473fdf51f87ed7c66"
   integrity sha512-rfm+0tuYC+HUFtk9IjptoqUHsLYUTkXbA7EINgx5rlUVobvQDRdpqNrhbrXdApykI4BvEueQ7Yv8jq5Pxl1Yyw==

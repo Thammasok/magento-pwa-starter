@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-import todoAction from '../../../actions/Todo'
+import todoAction from '../../../redux/Actions/Todo'
 
 const Task = ({ data }) => {
   const dispatch = useDispatch()

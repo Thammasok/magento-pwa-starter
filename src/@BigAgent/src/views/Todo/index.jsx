@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 // Actions
-import todoAction from '../../actions/Todo'
+import todoAction from '../../redux/Actions/Todo'
 
 // Components
 import Task from './Task'

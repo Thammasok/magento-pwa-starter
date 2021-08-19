@@ -10,6 +10,13 @@ import { mergeClasses } from '@magento/venia-ui/lib/classify'
 import Footer from '@magento/venia-ui/lib/components/Footer'
 import Header from '@magento/venia-ui/lib/components/Header'
 
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
+
+const client = new ApolloClient({
+  uri: MAGENTO_SERVICE_QRAPHQL_URL,
+  cache: new InMemoryCache()
+})
+
 const MainLayout = props => {
   const { children, isMasked } = props
   const classes = mergeClasses(defaultClasses, props.classes)
@@ -20,11 +27,13 @@ const MainLayout = props => {
   useScrollLock(isMasked)
 
   return (
-    <main className={rootClass}>
-      <Header />
-      <div className={pageClass}>{children}</div>
-      <Footer />
-    </main>
+    <ApolloProvider client={client}>
+      <main className={rootClass}>
+        <Header />
+        <div className={pageClass}>{children}</div>
+        <Footer />
+      </main>
+    </ApolloProvider>
   )
 }
 
