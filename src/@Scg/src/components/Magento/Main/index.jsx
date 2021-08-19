@@ -1,6 +1,7 @@
 import React from 'react'
 import { bool, shape, string } from 'prop-types'
 import { useScrollLock } from '@magento/peregrine'
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 
 // CSS Modules
 import defaultClasses from './main.css'
@@ -9,8 +10,6 @@ import defaultClasses from './main.css'
 import { mergeClasses } from '@magento/venia-ui/lib/classify'
 import Footer from '@magento/venia-ui/lib/components/Footer'
 import Header from '@magento/venia-ui/lib/components/Header'
-
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 
 const client = new ApolloClient({
   uri: MAGENTO_SERVICE_QRAPHQL_URL,

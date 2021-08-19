@@ -134,7 +134,7 @@
   },
   "pwa-studio": {
     "targets": {
-      "intercept": "src/@BigAgent/init/local-intercept.js"
+      "intercept": "src/@Scg/init/local-intercept.js"
     }
   }
 }
