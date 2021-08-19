@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import { MAGENTO_BACKEND_URL } from '../../configs'
 
 // CSS Modules
-import greetingClasses from './greeting.css'
+import greetingClasses from './greeting.module.css'
 
 // Components
 

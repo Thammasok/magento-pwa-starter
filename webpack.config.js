@@ -1,8 +1,8 @@
 const { configureWebpack, graphQL } = require('@magento/pwa-buildpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
-const moduleOverridePlugin = require('./src/@BigAgent/init/moduleOverridePlugin')
-const componentOverrideMapping = require('./src/@BigAgent/init/componentOverrideMapping')
+const moduleOverridePlugin = require('./src/@Scg/init/moduleOverridePlugin')
+const componentOverrideMapping = require('./src/@Scg/init/componentOverrideMapping')
 const {
   getMediaURL,
   getStoreConfigData,

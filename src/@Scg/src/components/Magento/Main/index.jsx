@@ -4,7 +4,7 @@ import { useScrollLock } from '@magento/peregrine'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 
 // CSS Modules
-import defaultClasses from './main.css'
+import defaultClasses from './main.module.css'
 
 // Magento Components
 import { mergeClasses } from '@magento/venia-ui/lib/classify'
