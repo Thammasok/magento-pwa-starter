@@ -12,6 +12,7 @@ const {
 const { DefinePlugin } = webpack
 const { LimitChunkCountPlugin } = webpack.optimize
 module.exports = async env => {
+  mode: process.env.NODE_ENV || 'development'
   /**
    * configureWebpack() returns a regular Webpack configuration object.
    * You can customize the build by mutating the object here, as in
